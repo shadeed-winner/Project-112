@@ -50,11 +50,11 @@ if (error) {
   speak();
   if(results[0].label == "Open")
   {
-      document.getElementById("update_gesture").innerHTML = "(1st image)";
+      document.getElementById("update_gesture").innerHTML = "";
   }
   if(results[0].label == "Weird")
   {
-      document.getElementById("update_gesture").innerHTML = "(4nd image)";
+      document.getElementById("update_gesture").innerHTML = "";
   }
   if(results[0].label == "???")
   {
