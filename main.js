@@ -58,36 +58,36 @@ if (error) {
   }
   if(results[0].label == "???")
   {
-      document.getElementById("update_gesture").innerHTML = "(3rd image)";
+      document.getElementById("update_gesture").innerHTML = "";
   }
   if(results[0].label == "Spider-man")
   {
-      document.getElementById("update_gesture").innerHTML = "(2nd image)";
+      document.getElementById("update_gesture").innerHTML = "";
   }
   if(results[0].label == "Finger guns")
   {
-      document.getElementById("update_gesture").innerHTML = "(5th image)";
+      document.getElementById("update_gesture").innerHTML = "";
   }
 
   if(results[1].label == "Open")
   {
-      document.getElementById("update_gesture2").innerHTML = "(1st image)";
+      document.getElementById("update_gesture2").innerHTML = "";
   }
   if(results[1].label == "Weird")
   {
-      document.getElementById("update_gesture2").innerHTML = "(4th image)";
+      document.getElementById("update_gesture2").innerHTML = "";
   }
   if(results[1].label == "???")
   {
-      document.getElementById("update_gesture2").innerHTML = "(3rd image)";
+      document.getElementById("update_gesture2").innerHTML = "";
   }
   if(results[1].label == "Spider-man")
   {
-      document.getElementById("update_gesture2").innerHTML = "(2nd image)";
+      document.getElementById("update_gesture2").innerHTML ="";
   }
   if(results[1].label == "Finger guns")
   {
-      document.getElementById("update_gesture2").innerHTML = "(5th image)";
+      document.getElementById("update_gesture2").innerHTML = "";
   }
 }
 }
