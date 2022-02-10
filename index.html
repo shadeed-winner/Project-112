@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Hand gesture web app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+  
+        <center>
+        <h3 class="btn btn-success heading">HaNd GeStUrE wEb AaP
+        <br>
+        <span>👍</span>
+        <span>👌</span>
+        <span>✌</span>
+        <span>✋</span>
+        <span>✊</span>
+        <span>👎</span>
+        </h3>
+        <br><br>
+        
+        <p style="font-size: 22px;">Take a picture of a hand gesture to know about it's meaning</p>
+        <p style="font-size: 18px">-The model is trained on the following gestures-
+        <br>
+        <div class="container" id="gesture_img">
+        <img width="40" height: "40" src="IMG-4778.jpg">
+        <img width="40" height: "40" src="IMG-4780.jpg">
+        <img width="40" height: "40" src="IMG-4781.jpg">
+        <img width="40" height: "40" src="IMG-4782.jpg">
+        <img width="40" height: "40" src="IMG-4783 (1).jpg"><br>
+        <h5 style="font-weight: bold; color: white;">1. Open / 2. Spider-man / 3. ??? / 4. weird / 5. Finger guns</h5>
+        </div>
+        </p>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label id="webcam">Webcam - </label>
+          <div id="camera"></div>
+            <br><br>
+            <button onclick="take_snapshot();" class="btn btn-primary">cApTuRe ImAgE</button>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>pReDiCtIoN 1 - </label>
+          <div class="container" id="div1">
+          <p class="emotion_name" id="result_gesture_name"></p>
+          <p id="update_gesture"></p>
+        </div>
+          <label>pReDiCtIoN 2 - </label>
+          <div class="container" id="div2">
+          <p class="emotion_name" id="result_gesture_name2"></p>
+          <p id="update_gesture2"></p>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <label id="photo">Photo - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">pRedIcT gEsTuRe</button>
+        </div>
+        
+        </center>
+        
+        </div>
+        
+        <h3 id="funny">Shadeed Was Here ( ͡° ͜ʖ ͡°)</h3>
+        <script src="main.js"></script>
+
+</body>
+</html>
